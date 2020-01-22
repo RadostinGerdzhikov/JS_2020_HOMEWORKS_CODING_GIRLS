@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Window prompt() Method
+    </title>
+</head>
+
+<body style="text-align: center;">
+    <h1 style="color:red;">
+        Print THE NUMBER
+    </h1>
+    <h2>
+        Window prompt() Method
+    </h2>
+
+    <button onclick="geek()">
+        Click me!
+    </button>
+    <p id="g"></p>
+
+    <script>
+        function geek() {
+            
+            var doc = prompt("Please enter number between 0 and 130 text", 0);
+              
+              
+              while(doc < 0 || doc > 130) {
+                    doc = prompt("Please enter number between 0 and 130 text", 0);
+                }
+                    document.getElementById("g").innerHTML =
+                "The number is " + doc;
+                
+
+            
+
+    
+
+        } 
+    </script>
+</body>
+
+</html>
